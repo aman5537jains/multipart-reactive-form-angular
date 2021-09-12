@@ -58,7 +58,7 @@ export class UploadFileComponent implements OnInit {
         uploadData.append(input_name, form[input_name]);
     }
     
-    return this.http.post("http://localhost/info.php", uploadData).subscribe(data=>{
+    return this.http.post("https://readerstacks.com/demo/php.php", uploadData).subscribe(data=>{
       alert(JSON.stringify(data));
     })
       
